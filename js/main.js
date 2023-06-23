@@ -264,6 +264,15 @@ function hienThiNV(taiKhoan) {
   getElement("#luongCB").value = nv.luongCB;
   getElement("#chucvu").value = nv.chucVu;
   getElement("#gioLam").value = nv.gioLam;
+  getElement('#tbTKNV').style.display = 'none'
+  getElement('#tbTen').style.display = 'none'
+  getElement('#tbTen').style.display = 'none'
+  getElement('#tbEmail').style.display = 'none'
+  getElement('#tbMatKhau').style.display = 'none'
+  getElement('#tbNgay').style.display = 'none'
+  getElement('#tbLuongCB').style.display = 'none'
+  getElement('#tbChucVu').style.display = 'none'
+  getElement('#tbGiolam').style.display = 'none'
 }
 
 //Cập nhật nhân viên
@@ -287,5 +296,17 @@ getElement("#searchName").addEventListener("keyup", function () {
   }
   renderNV(arrSearch)
 });
+getElement('#btnThem').onclick = function() {
+  resetForm()
+  getElement('#tbTKNV').style.display = 'none'
+  getElement('#tbTen').style.display = 'none'
+  getElement('#tbTen').style.display = 'none'
+  getElement('#tbEmail').style.display = 'none'
+  getElement('#tbMatKhau').style.display = 'none'
+  getElement('#tbNgay').style.display = 'none'
+  getElement('#tbLuongCB').style.display = 'none'
+  getElement('#tbChucVu').style.display = 'none'
+  getElement('#tbGiolam').style.display = 'none'
+}
 
 
